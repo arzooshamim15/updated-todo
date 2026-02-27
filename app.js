@@ -62,7 +62,7 @@ async function getTodoValue() {
             ${value.todo}
 
             <button onclick="edit(${value.id})">edit</button>
-            <button onclick="delet(${value.id})">delet</button>
+            <button onclick="delet(${value.id})">delete</button>
             </li>
         `
     })
@@ -149,3 +149,4 @@ async function delet(elem) {
 
 }
 window.delet = delet
+
