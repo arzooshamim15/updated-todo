@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>supabase</title>
+</head>
+<style>
+    form {
+        margin: 20px;
+    }
+</style>
+
+<body>
+    <!-- add todo input  -->
+    <form action="javaScript:void(0)" method="post" onsubmit="addtodo(this)">
+
+        <!-- name -->
+        <input type="text" name="todovalue" placeholder="User Name">
+
+
+
+        <button type="submit">Login</button>
+
+    </form>
+
+    <!-- get todo values -->
+    <div>
+        <ol id="todoWrapper">
+        </ol>
+    </div>
+
+    <style>
+        #popup {
+            display: none;
+        }
+    </style>
+
+    <div id="popup">
+        <form action="javaScript:void(0)" onsubmit="updatee(this)" method="post">
+            <input type="text" name="updatedv" placeholder="updated value" id="upInput">
+            <button type="submit">update</button>
+        </form>
+    </div>
+    <script type="module" src="./app.js"></script>
+</body>
+
+</html>
